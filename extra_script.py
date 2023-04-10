@@ -15,6 +15,7 @@ def post_program_action(source, target, env):
     shutil.copy(program_path, path.parent.parent.absolute())
 
 # Combine separate bin files with their respective offsets into a single file
+# Combine separate bin files with their respective offsets into a single file
 # This single file must then be flashed to an ESP32 node with 0 offset.
 # Copied from: https://github.com/letscontrolit/ESPEasy/blob/mega/tools/pio/post_esp32.py
 def esp32_create_combined_bin(source, target, env):
